@@ -16,20 +16,20 @@ import {
 
 const components: { title: string; href: string}[] = [
   {
-    title: "Architectiog Tomorrow: Submit Construction Solutions",
-    href: "/2023/12/01/architecting-tomorrow-summit-construction-solutions/",
+    title: "Architecting Tomorrow: Submit Construction Solutions",
+    href: "/architecting-tomorrow",
   },
   {
     title: "Elecate your Vision: Stellar Construction Innovations",
-    href: "/2023/12/01/elevate-your-vision-stellar-construction-innovations/",
+    href: "/elevate-vision",
   },
   {
     title: "Crating Dreams: Pioneer Construction Services",
-    href: "/2023/12/01/crafting-dreams-pioneer-construction-services/",
+    href: "/creating-dreams",
   },
   {
     title: "Dynamic Construction Solutions: Building Tomorrow, Today",
-    href: "/2023/12/01/dynamic-construction-solutions-building-tomorrow-today/",
+    href: "/dynamic-construction",
   },
 ]
 

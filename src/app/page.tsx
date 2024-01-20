@@ -1,22 +1,79 @@
+"use client";
+
 import { Button } from '@/components/ui/button'
 import AnimatedNum from "./components/AnimatedNum"
 import { HiOutlineSortDescending } from "react-icons/hi";
 import { GiBurningTree } from "react-icons/gi";
 import { MdCoronavirus } from "react-icons/md";
+import { FaStar } from "react-icons/fa";
 import image1 from "../../public/image1.jpg"
 import Image from 'next/image';
 import image2 from "../../public/image2.jpg"
 import image3 from "../../public/image3.jpg"
 import image4 from "../../public/image4.jpg"
 import image5 from "../../public/image5.jpg"
+import man from "../../public/man.png"
 import image from "../../public/image.webp"
 import image7 from "../../public/image7.png"
 import joe from "../../public/joe.jpg"
+import dozer from "../../public/dozer.avif"
 import image6 from '../../public/download.jpg'
+import company1 from "../../public/company1.png"
+import company2 from "../../public/company2.png"
+import company3 from "../../public/company3.png"
+import company4 from "../../public/company4.png"
+import company5 from "../../public/company5.png"
+import company6 from "../../public/company6.png"
 import signature from "../../public/signature.png"
 import AnimatedImage from "./components/AnimatedImage"
+import { useState } from 'react';
+import Link from 'next/link';
+import Articles from './components/Articles';
 
 export default function Home() {
+
+  const [adapt, setAdapt] = useState(false)
+  const [global, setGlobal] = useState(false)
+  const [green, setGreen] = useState(false)
+  const [human, setHuman] = useState(false)
+  const [source, setSource] = useState(false)
+
+  const clickAdapt = () => {
+    setAdapt(!adapt)
+    setGlobal(false)
+    setGreen(false)
+    setHuman(false)
+    setSource(false)
+  }
+  const clickGlobal = () => {
+    setAdapt(false)
+    setGlobal(!global)
+    setGreen(false)
+    setHuman(false)
+    setSource(false)
+  }
+  const clickGreen = () => {
+    setAdapt(false)
+    setGlobal(false)
+    setHuman(false)
+    setGreen(!green)
+    setSource(false)
+  }
+  const clickHuman = () => {
+    setAdapt(false)
+    setGlobal(false)
+    setHuman(!human)
+    setGreen(false)
+    setSource(false)
+  }
+  const clickSource = () => {
+    setAdapt(false)
+    setGlobal(false)
+    setHuman(false)
+    setGreen(false)
+    setSource(!source)
+  }
+
   return <>
     <div className='flex flex-col gap-y-5'>
       <section className='w-full h-screen pb-16'>
@@ -231,7 +288,7 @@ export default function Home() {
       </section>
 
       <section className='w-full lg:mt-80 mt-96'>
-        <div className="w-full lg:flex flex py-16 lg:py-4 flex-col-reverse lg:flex-row bg-black lg:items-center justify-start items-start lg:justify-center space-x-10 px-32">
+        <div className="w-full lg:flex flex py-16 lg:pt-16 lg:py-0 flex-col-reverse lg:flex-row bg-black lg:items-center justify-start items-start lg:justify-center space-x-10 px-32">
           <div className='lg:w-1/2 w-full mt-5 lg:mt-0'>
             <div className='flex items-center'>
               <div className='h-1 w-8 rounded-xl bg-yellow-500'></div>
@@ -244,6 +301,215 @@ export default function Home() {
               alt='image'
               className='bg-transparent w-full'
             />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className='lg:py-14'>
+          <div className='w-full mt-5 lg:mt-0 flex flex-col items-center justify-center'>
+            <div className='flex items-center'>
+              <div className='h-1 w-8 rounded-xl bg-yellow-500'></div>
+              <h1 className='text-yellow-500 text-[1rem] font-nunito lg:text-xl font-bold'>FREQUENTLY ASKED QUESTIONS</h1>
+            </div>
+            <h1 className=' text-4xl lg:text-5xl font-bold font-play'>What Customers Are Asking?</h1>
+          </div>
+          <div className=' flex lg:flex-row flex-col'>
+            <div className='lg:w-1/2 lg:pt-20 lg:pl-16 pt-16 pb-10 px-7 lg:pb-0'>
+
+              <div className='flex flex-col space-y-10'>
+                <div className='flex space-x-3 lg:flex-row flex-col justify-center items-center'>
+                  <div className='bg-yellow-500 p-6 flex justify-center items-center rounded-full text-white'>
+                    <HiOutlineSortDescending size={30} />
+                  </div>
+                  <div className='flex px-auto mx-auto lg:py-0 flex-col items-center justify-center py-12'>
+                    <h1 className='font-bold font-ptSans text-xl py-2'>Fundraising Community</h1>
+                    <p className='line-clamp-3 text-black/60 font-pop'>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 oaorum eiusmodrunch 3 wolf moon tempor</p>
+                  </div>
+                </div>
+                <div className='flex space-x-3 lg:flex-row flex-col justify-center items-center'>
+                  <div className='bg-yellow-500 p-6 flex justify-center items-center rounded-full text-white'>
+                    <HiOutlineSortDescending size={30} />
+                  </div>
+                  <div className='flex lg:py-0 flex-col items-center justify-center py-12'>
+                    <h1 className='font-bold font-ptSans text-xl py-2'>Fundraising Community</h1>
+                    <p className='line-clamp-3 text-black/60 font-pop'>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 oaorum eiusmodrunch 3 wolf moon tempor</p>
+                  </div>
+                </div>
+                <div className='flex space-x-3 lg:flex-row flex-col justify-center items-center'>
+                  <div className='bg-yellow-500 p-6 flex justify-center items-center rounded-full text-white'>
+                    <HiOutlineSortDescending size={30} />
+                  </div>
+                  <div className='flex flex-col items-center lg:py-0 justify-center py-12'>
+                    <h1 className='font-bold font-ptSans text-xl py-2'>Fundraising Community</h1>
+                    <p className='line-clamp-3 text-black/60 font-pop'>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 oaorum eiusmodrunch 3 wolf moon tempor</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className='lg:w-1/2 h-full flex flex-col space-y-1 lg:mt-20 px-8 lg:px-20'>
+              <div>
+                <div className='bg-yellow-500 py-3 w-full px-8 hover:cursor-pointer'>
+                  <h1 className='font-bold text-white' onClick={clickAdapt}>What is adaptation?</h1>
+                </div>
+                <div className=' transform transition duration-500 ease-in-out'>
+                  {
+                    adapt &&
+                    <p className='text-black/60 lg:m-2 font-pop text-[.8rem]'>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor</p>
+                  }
+                </div>
+              </div>
+
+              <div>
+                <div className='bg-yellow-500 py-3 w-full px-8 hover:cursor-pointer'>
+                  <h1 className='font-bold text-white' onClick={clickGlobal}>What is global warming?</h1>
+                </div>
+                <div className=' transition-opacity transform ease-in-out duration-500'>
+                  {
+                    global &&
+                    <p className='text-black/60 lg:m-2 font-pop text-[.8rem]'>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor</p>
+                  }
+                </div>
+              </div>
+
+
+              <div>
+                <div className='bg-yellow-500 py-3 w-full px-8 hover:cursor-pointer'>
+                  <h1 className='font-bold text-white' onClick={clickGreen}>What is the greenhouse effect?</h1>
+                </div>
+                <div className=' transition-opacity transform ease-in-out duration-500'>
+                  {
+                    green &&
+                    <p className='text-black/60 lg:m-2 font-pop text-[.8rem]'>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor</p>
+                  }
+                </div>
+              </div>
+
+              <div>
+                <div className='bg-yellow-500 py-3 w-full px-8 hover:cursor-pointer'>
+                  <h1 className='font-bold text-white' onClick={clickHuman}>How do human activities contribute to climate change and how do they compare with natural influences?</h1>
+                </div>
+                <div className=' transition-opacity transform ease-in-out duration-500'>
+                  {
+                    human &&
+                    <p className='text-black/60 lg:m-2 font-pop text-[.8rem]'>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor</p>
+                  }
+                </div>
+              </div>
+
+              <div>
+                <div className='bg-yellow-500 py-3 w-full px-8 hover:cursor-pointer'>
+                  <h1 className='font-bold text-white' onClick={clickSource}>What are the main sources of greenhouse gas emissions which have led to increased concentration in the atmosphere?</h1>
+                </div>
+                <div className=' transition-opacity transform ease-in-out duration-500'>
+                  {
+                    source &&
+                    <p className='text-black/60 lg:m-2 font-pop text-[.8rem]'>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor</p>
+                  }
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section >
+
+      <section className='w-full'>
+        <div style={{ backgroundImage: `url("${dozer.src}")` }}
+          className='lg:h-[90vh] w-full bg-no-repeat bg-cover bg-fixed'
+        >
+          <div className='bg-black backdrop-blur-sm opacity-90 flex lg:mb-14 lg:py-40 flex-col justify-center items-center -z-10 lg:px-40'>
+            <div className='z-100 lg:mx-32 px-14 lg:px-0 py-28 lg:py-0'>
+              <div className='w-full mt-5 lg:mt-0 flex flex-col items-center justify-center'>
+                <div className='flex items-center'>
+                  <div className='h-1 w-8 rounded-xl bg-yellow-500'></div>
+                  <h1 className='text-yellow-500 text-[1rem] font-nunito lg:text-xl font-bold'>WORK WITH US</h1>
+                </div>
+                <h1 className=' text-4xl text-white lg:text-5xl font-bold font-play'>Have Any Upcoming Project</h1>
+              </div>
+              <div className='flex flex-col justify-center items-center space-y-5 my-3'>
+                <p className='text-white font-pop text-[.8rem] font-bold'>There are many variations of passages of Lorem Ipsum available, but the have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                <button className='bg-yellow-500 px-6 py-4'>Get Started</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className='w-full -mt-16 bg-white'>
+        <div className='w-full flex-col lg:flex-row lg:px-32 pt-32 flex'>
+          <div className='lg:w-1/2 '>
+            <img src={man.src} alt="man" className='lg:h-[650px]' />
+          </div>
+          <div className='lg:w-1/2 lg:mt-14 lg:pl-12 flex flex-col justify-center items-start'>
+            <div className='py-8 pl-5 lg:pl-0 lg:py-0 '>
+              <div className='flex items-center'>
+                <div className='h-1 w-8 rounded-xl bg-yellow-500'></div>
+                <h1 className='text-yellow-500 text-[1rem] font-nunito lg:text-xl font-bold'>TESTIMONIALS</h1>
+              </div>
+              <h1 className=' text-4xl lg:text-5xl font-bold font-play'>Our Clients Reviews</h1>
+            </div>
+            <div className='p-7 lg:py-7 text-white lg:mt-3 mx-5 lg:mx-0 py-8 bg-yellow-500 flex flex-col space-y-5'>
+              <p className='font-pop text-[1rem]'>If you are going to use a generators on the Interne passage predefined chunks as predefined chunks asof Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+              <p><span className='font-semibold'>Jen Johnson,</span>CEO</p>
+              <div className='flex text-white'>
+                <FaStar size={15} />
+                <FaStar size={15} />
+                <FaStar size={15} />
+                <FaStar size={15} />
+                <FaStar size={15} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className='lg:py-10'>
+          <div className='grid gap-6 lg:gap-2 place-items-center lg:py-14 lg:grid-cols-6 md:grid-cols-3 grid-cols-2 w-full'>
+            <img src={company1.src} alt="comp1"
+              className='h-[80px]'
+            />
+            <img src={company2.src} alt="comp1"
+              className='h-[80px]'
+            />
+            <img src={company3.src} alt="comp1"
+              className='h-[80px]'
+            />
+            <img src={company4.src} alt="comp1"
+              className='h-[80px]'
+            />
+            <img src={company5.src} alt="comp1"
+              className='h-[80px]'
+            />
+            <img src={company6.src} alt="comp1"
+              className='h-[80px]'
+            />
+          </div>
+          <div className='flex flex-col py-20 items-center justify-center lg:py-5 w-full'>
+            <div className='flex items-center'>
+              <div className='h-1 w-8 rounded-xl bg-yellow-500'></div>
+              <h1 className='text-yellow-500 text-[1rem] font-nunito lg:text-xl font-bold'>NEWS & BLOGS</h1>
+            </div>
+            <h1 className=' text-4xl lg:text-5xl font-bold font-play'>Our Latest News Post and Articles</h1>
+          </div>
+          <div>
+            <div className='flex justify-center w-full flex-col lg:flex-row p-4 items-start lg:py-10 lg:space-x-7 lg:px-28'>
+
+              <Articles heading='Hello world!'
+                href='/hello-world'
+                para='Welcome to WordPress. This is your first post. Edit or delete it, then start writing!'
+              />
+              <Articles heading='Architecting Tomorrow: Summit Construction Solutions'
+                href='/construction-solution'
+                para='Discover excellence in construction with Summit Construction Solutions. Our team of skilled professionals is dedicated to turning visions into reality. From groundbreaking designs to the final touches, we take pride…'
+              />
+              <Articles heading='Elevate Your Vision: Stellar Construction Innovations'
+                href='construction-innovation'
+                para='At Stellar Construction Innovations, we redefine the landscape of possibilities. With a blend of cutting-edge technology and skilled craftsmanship, we bring your dreams to life. From concept to completion, our…'
+              />
+            </div>
           </div>
         </div>
       </section>

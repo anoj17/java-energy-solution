@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import { montserrat, montserratRegular, nunitoSans, playFair, poppins, ptSans } from './components/Fonts'
 import NavBar from './components/NavBar'
+import Footer from './components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,6 +24,7 @@ export default function RootLayout({
        ${poppins.variable} ${playFair.variable} ${nunitoSans.variable} ${ptSans.variable} ${montserratRegular.variable}`}>
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   )

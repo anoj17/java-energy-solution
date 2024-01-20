@@ -1,4 +1,5 @@
 import Link from "next/link"
+import image2 from "../../../public/image2.jpg"
 
 interface iAPPpara {
     heading: string,
@@ -23,43 +24,32 @@ export default function Services() {
             <div className="w-full lg:my-10 lg:px-28">
                 <div className="flex lg:flex-row flex-col lg:px-0 px-4 md:px-28 lg:space-x-9">
                     <div className="flex flex-col space-y-4">
-                        <img src='https://java.neptekasolutions.com/wp-content/uploads/2023/12/pic3.jpg'
+                        <img src={image2.src}
                             alt=""
-                            className='lg:h-[760px] lg:w-[750px]' />
+                            className='lg:h-[500px] lg:w-[750px]' />
 
                         <div className="flex flex-col space-y-4 lg:space-y-3">
                             <div className="flex flex-col justify-center items-start lg:py-2">
-                                <h1 className="text-black/60 text-[1rem] lg:text-[1.4rem] font-monts tracking-wider font-bold">Our Services</h1>
-                                <div className="h-[2px] w-[60px] bg-black/80 mt-2 lg:mt-4"></div>
-                                <p className="font-ptSans text-black/60 mt-3 lg:mt-0 text-[1rem]">At Pioneer Construction Services, we offer a comprehensive suite of services designed to meet the diverse needs of our clients. Our commitment to excellence and innovation is reflected in every aspect of our service offerings.</p>
+                                <h1 className="text-black/60 text-[1rem] lg:text-[1.4rem] font-monts tracking-wider font-bold">About Us</h1>
+                                <div className="h-[2px] w-[60px] bg-black/80 my-3"></div>
+                                <p className="font-ptSans text-black/60 lg:mt-0 text-[1rem]">At Pioneer Construction Services, we offer a comprehensive suite of services designed to meet the diverse needs of our clients. Our commitment to excellence and innovation is reflected in every aspect of our service offerings.</p>
                             </div>
                             <div>
-                                <h1 className="text-black/60 text-[1.1rem] font-ptSans font-bold">1. Architectural Design:</h1>
-                                <p className="font-ptSans text-black/60 text-[1rem]">Envision your dream space with our expert architects. From concept sketches to detailed blueprints, we bring creativity and functionality together, ensuring that every design is a unique reflection of your vision.</p>
+                                <p className="font-ptSans text-black/60 text-[1rem]">At Dynamic Construction Solutions, our journey is marked by a relentless pursuit of perfection. Our team of seasoned professionals, architects, and engineers is dedicated to translating your dreams into reality. From concept to completion, we pride ourselves on precision, quality, and a forward-thinking approach.</p>
                             </div>
                             <div>
-                                <h1 className="text-black/60 text-[1.1rem] font-ptSans font-bold">2. Construction Management:</h1>
-                                <p className="font-ptSans text-black/60 text-[1rem]">Our seasoned project managers oversee every aspect of construction, ensuring seamless coordination and timely delivery. We prioritize efficiency, cost-effectiveness, and quality control to bring your project to life on schedule and within budget.</p>
+                                <p className="font-ptSans text-black/60 text-[1rem]">What sets us apart is our unwavering commitment to pushing boundaries. We embrace the latest technologies and sustainable practices, ensuring that every project reflects our dedication to environmental responsibility.</p>
                             </div>
                             <div>
-                                <h1 className="text-black/60 text-[1.1rem] font-ptSans font-bold">3. Renovation and Remodeling:</h1>
-                                <p className="font-ptSans text-black/60 text-[1rem]">Transform existing spaces into modern marvels with our renovation expertise. Whether it’s revitalizing a home or revamping a commercial property, we breathe new life into structures with a keen eye for detail and contemporary design.</p>
+                                <p className="font-ptSans text-black/60 text-[1rem]">Our portfolio showcases a diverse range of projects, from residential marvels to commercial landmarks. Each structure tells a unique story of collaboration, creativity, and attention to detail. We believe in creating spaces that not only meet functional needs but also inspire and endure.</p>
                             </div>
                             <div>
-                                <h1 className="text-black/60 text-[1.1rem] font-ptSans font-bold">4. Sustainable Practices:</h1>
-                                <p className="font-ptSans text-black/60 text-[1rem]">As advocates for environmental responsibility, we integrate sustainable practices into our projects. From energy-efficient designs to eco-friendly materials, we strive to minimize our environmental footprint while maximizing the longevity of your investment.</p>
+                                <p className="font-ptSans text-black/60 text-[1rem]">Dynamic Construction Solutions is not just a construction company; we are partners in your vision. Our transparent communication, reliability, and client-centric approach form the foundation of lasting relationships. As we continue to evolve, we invite you to join us on this exciting journey of shaping the landscapes of tomorrow.</p>
                             </div>
                             <div>
-                                <h1 className="text-black/60 text-[1.1rem] font-ptSans font-bold">5. Quality Assurance:</h1>
-                                <p className="font-ptSans text-black/60 text-[1rem]">Our commitment to quality is unwavering. Rigorous quality control measures are embedded into every stage of our projects to ensure that the final result not only meets but exceeds your expectations.</p>
+                                <p className="font-ptSans text-black/60 text-[1rem]">Experience the difference with Dynamic Construction Solutions – Where Innovation Meets Craftsmanship.</p>
                             </div>
-                            <div>
-                                <h1 className="text-black/60 text-[1.1rem] font-ptSans font-bold">6. Consultation Services:</h1>
-                                <p className="font-ptSans text-black/60 text-[1rem]">Benefit from our industry expertise through our consultation services. Whether you need guidance on project feasibility, budgeting, or regulatory compliance, our knowledgeable consultants are here to assist you every step of the way.</p>
-                            </div>
-                            <div className="pt-2">
-                                <p className="font-ptSans text-black/60 text-[1rem]">Pioneer Construction Services is more than a construction provider; we are your partners in realizing your vision. Explore the possibilities with us and experience construction services that go beyond expectations. Your dream project starts here.</p>
-                            </div>
+                           
                         </div>
 
                     </div>
